@@ -8,15 +8,21 @@
 /* GENERAL */
 
 body {
+  font-family: "Open Sans", serif;
+}
+
+.container {
   max-width: 75rem;
   margin: 0 auto;
-  font-family: "Open Sans", serif;
 }
 
 /* HEADER */
 
 header {
   background-color: #fff;
+}
+
+.header--d-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,16 +55,29 @@ header nav a {
 .selected {
   color: #0282f9;
   border-bottom: 0.25rem solid #0282f9;
-  padding-bottom: 1.875rem;
+  padding-bottom: 1.8125rem;
 }
 
 header nav a:hover {
   color: #0282f9;
   border-bottom: 0.25rem solid #0282f9;
-  padding-bottom: 1.875rem;
+  padding-bottom: 1.8125rem;
 }
 
 /* MAIN */
+
+main {
+  background-color: #1c1c1c;
+  margin-top: -1.25rem;
+  height: 8.125rem;
+}
+
+.main--h3 {
+  height: 8.125rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
 
 /* PRODUCTS */
 
