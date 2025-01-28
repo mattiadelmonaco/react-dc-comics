@@ -121,3 +121,53 @@ main {
 }
 
 /* FOOTER */
+
+footer {
+  background-image: url("./img/footer-bg.jpg");
+  height: 23.125rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.footer--top {
+  padding-top: 2.5rem;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.footer--top h4 {
+  color: #fff;
+  padding-bottom: 0.625rem;
+}
+
+.footer--top ul {
+  padding-bottom: 0.9375rem;
+}
+
+.footer--top li {
+  list-style: none;
+}
+
+.footer--top a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+  font-size: 0.625rem;
+  transition: 0.4s;
+}
+
+.footer--top a:hover {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.footer--top--logo {
+  position: absolute;
+  bottom: -5.625rem;
+  right: 9.375rem;
+  object-fit: contain;
+}
