@@ -106,6 +106,39 @@ export default function Footer() {
                 alt="Logo grande DC Comics"
               />
             </div>
+            <div className="footer--bottom">
+              <button className="footer--bottom--btn">SIGN-UP NOW!</button>
+              <div className="footer--bottom--social">
+                <h4>FOLLOW US</h4>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="../img/footer-facebook.png" alt="Facebook" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../img/footer-twitter.png" alt="Twitter" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../img/footer-youtube.png" alt="Youtube" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../img/footer-pinterest.png" alt="Pinterest" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../img/footer-periscope.png" alt="Periscope" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </footer>

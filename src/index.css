@@ -171,3 +171,26 @@ footer {
   right: 9.375rem;
   object-fit: contain;
 }
+
+.footer--bottom {
+  background-color: #303030;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.footer--bottom--btn {
+  background-color: transparent;
+  border: 0.125rem solid #0282f9;
+}
+
+.footer--bottom--social,
+.footer--bottom--social ul {
+  display: flex;
+  gap: 1.25rem;
+  height: 100px;
+}
+
+.footer--bottom li {
+  list-style: none;
+}
