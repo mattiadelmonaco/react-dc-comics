@@ -124,35 +124,37 @@ main {
 
 footer {
   background-image: url("./img/footer-bg.jpg");
-  height: 23.125rem;
+  height: 27.5rem;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   top: 0;
   left: 0;
-  z-index: -1;
+  overflow: hidden;
 }
 
-.footer--top {
+/* FOOTER TOP */
+
+.footer-top {
   padding-top: 2.5rem;
   display: flex;
   gap: 2.5rem;
 }
 
-.footer--top h4 {
+.footer-top h4 {
   color: #fff;
   padding-bottom: 0.625rem;
 }
 
-.footer--top ul {
+.footer-top ul {
   padding-bottom: 0.9375rem;
 }
 
-.footer--top li {
+.footer-top li {
   list-style: none;
 }
 
-.footer--top a {
+.footer-top a {
   text-decoration: none;
   color: #fff;
   opacity: 0.5;
@@ -160,37 +162,71 @@ footer {
   transition: 0.4s;
 }
 
-.footer--top a:hover {
+.footer-top a:hover {
   opacity: 1;
   transition: 0.4s;
 }
 
-.footer--top--logo {
+.footer-top--logo {
+  max-width: 100%;
   position: absolute;
-  bottom: -5.625rem;
+  top: -6.25rem;
   right: 9.375rem;
   object-fit: contain;
 }
 
-.footer--bottom {
+/* FOOTER BOTTOM */
+
+.footer-bottom {
   background-color: #303030;
+  margin-top: 1.25rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.footer-bottom--elements {
   display: flex;
   justify-content: space-between;
-  z-index: 1;
+  align-items: center;
 }
 
-.footer--bottom--btn {
+.footer-bottom--btn {
   background-color: transparent;
-  border: 0.125rem solid #0282f9;
+  border: 0.1875rem solid #0282f9;
+  padding: 0.75rem;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.4s;
 }
 
-.footer--bottom--social,
-.footer--bottom--social ul {
+.footer-bottom h4 {
+  color: #0282f9;
+  font-size: 1.125rem;
+}
+
+.footer-bottom--social,
+.footer-bottom--social ul {
   display: flex;
+  align-items: center;
   gap: 1.25rem;
   height: 100px;
 }
 
-.footer--bottom li {
+.footer-bottom li {
   list-style: none;
+  transition: 0.4s;
+}
+
+.footer-bottom--btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.086);
+  transition: 0.4s;
+}
+
+.footer-bottom li:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: 0.4s;
 }

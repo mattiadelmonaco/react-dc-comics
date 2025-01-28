@@ -6,7 +6,7 @@ export default function Footer() {
       <footer>
         <div className="container">
           <div>
-            <div className="footer--top">
+            <div className="footer-top">
               <div>
                 <h4>DC COMICS</h4>
                 <ul>
@@ -101,14 +101,18 @@ export default function Footer() {
                 </ul>
               </div>
               <img
-                className="footer--top--logo"
+                className="footer-top--logo"
                 src="../img/dc-logo-bg.png"
                 alt="Logo grande DC Comics"
               />
             </div>
-            <div className="footer--bottom">
-              <button className="footer--bottom--btn">SIGN-UP NOW!</button>
-              <div className="footer--bottom--social">
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <div className="container">
+            <div className="footer-bottom--elements">
+              <button className="footer-bottom--btn">SIGN-UP NOW!</button>
+              <div className="footer-bottom--social">
                 <h4>FOLLOW US</h4>
                 <ul>
                   <li>
