@@ -1,4 +1,5 @@
 import footerTopLinksData from "../data/footerTopLinksData";
+import footerBottomSocialsIcons from "../data/footerBottomSocialsIcons";
 
 export default function Footer() {
   return (
@@ -135,31 +136,15 @@ export default function Footer() {
               <div className="footer-bottom--social">
                 <h4>FOLLOW US</h4>
                 <ul>
-                  <li>
-                    <a href="#">
-                      <img src="../img/footer-facebook.png" alt="Facebook" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="../img/footer-twitter.png" alt="Twitter" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="../img/footer-youtube.png" alt="Youtube" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="../img/footer-pinterest.png" alt="Pinterest" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="../img/footer-periscope.png" alt="Periscope" />
-                    </a>
-                  </li>
+                  {footerBottomSocialsIcons.map((icon) => {
+                    return (
+                      <li key={icon.id}>
+                        <a href={icon.url}>
+                          <img src={icon.image} alt={icon.alt} />
+                        </a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
