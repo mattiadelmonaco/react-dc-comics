@@ -6,8 +6,8 @@ export default function Footer() {
           <div>
             <div className="footer-top">
               <div>
-                <h4>DC COMICS</h4>
                 <ul>
+                  <h4>DC COMICS</h4>
                   <li>
                     <a href="#">Characters</a>
                   </li>
@@ -30,8 +30,9 @@ export default function Footer() {
                     <a href="#">News</a>
                   </li>
                 </ul>
-                <h4>SHOP</h4>
+
                 <ul>
+                  <h4>SHOP</h4>
                   <li>
                     <a href="#">Shop DC</a>
                   </li>
@@ -41,8 +42,9 @@ export default function Footer() {
                 </ul>
               </div>
               <div>
-                <h4>DC</h4>
                 <ul>
+                  <h4>DC</h4>
+
                   <li>
                     <a href="#">Terms Of Use</a>
                   </li>
@@ -79,8 +81,9 @@ export default function Footer() {
                 </ul>
               </div>
               <div>
-                <h4>SITES</h4>
                 <ul>
+                  <h4>SITES</h4>
+
                   <li>
                     <a href="#">DC</a>
                   </li>
