@@ -1,3 +1,5 @@
+import footerTopLinksData from "../data/footerTopLinksData";
+
 export default function Footer() {
   return (
     <>
@@ -5,7 +7,24 @@ export default function Footer() {
         <div className="container">
           <div>
             <div className="footer-top">
-              <div>
+              {footerTopLinksData.map((ftCategory) => {
+                return (
+                  <div key={ftCategory.id}>
+                    <ul>
+                      <h4>{ftCategory.category}</h4>
+
+                      {ftCategory.items.map((link) => {
+                        return (
+                          <li key={link.id}>
+                            <a href={link.url}>{link.title}</a>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                );
+              })}
+              {/* <div>
                 <ul>
                   <h4>DC COMICS</h4>
                   <li>
@@ -100,7 +119,7 @@ export default function Footer() {
                     <a href="#">DC Power Visa</a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <img
                 className="footer-top--logo"
                 src="../img/dc-logo-bg.png"
