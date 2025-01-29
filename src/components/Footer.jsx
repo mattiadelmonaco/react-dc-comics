@@ -7,6 +7,7 @@ export default function Footer() {
       <footer>
         <div className="container">
           <div>
+            {/* FOOTER TOP */}
             <div className="footer-top">
               {footerTopLinksData.map((ftCategory) => {
                 return (
@@ -129,6 +130,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        {/* FOOTER BOTTOM */}
         <div className="footer-bottom">
           <div className="container">
             <div className="footer-bottom--elements">
