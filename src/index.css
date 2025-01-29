@@ -119,6 +119,10 @@ main {
   transition: 0.4s;
 }
 
+.products h4 {
+  font-weight: 500;
+}
+
 /* FOOTER */
 
 footer {
