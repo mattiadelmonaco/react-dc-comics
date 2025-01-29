@@ -1,3 +1,6 @@
+import Products from "./Products.jsx";
+console.log(Products);
+
 const content = "--> Content goes here <--";
 
 export default function Main() {
@@ -9,6 +12,7 @@ export default function Main() {
             <h3>{content}</h3>
           </div>
         </div>
+        <Products />
       </main>
     </>
   );
