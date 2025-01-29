@@ -1,3 +1,5 @@
+import headerNavbarData from "../data/headerNavbarData";
+
 export default function Header() {
   return (
     <>
@@ -15,38 +17,18 @@ export default function Header() {
             </div>
             <nav>
               <ul>
-                <li>
-                  <a href="#">CHARACTERS</a>
-                </li>
-                <li>
-                  <a className="selected" href="#">
-                    COMICS
-                  </a>
-                </li>
-                <li>
-                  <a href="#">MOVIES</a>
-                </li>
-                <li>
-                  <a href="#">TV</a>
-                </li>
-                <li>
-                  <a href="#">GAMES</a>
-                </li>
-                <li>
-                  <a href="#">COLLECTIBLES</a>
-                </li>
-                <li>
-                  <a href="#">VIDEOS</a>
-                </li>
-                <li>
-                  <a href="#">FANS</a>
-                </li>
-                <li>
-                  <a href="#">NEWS</a>
-                </li>
-                <li>
-                  <a href="#">SHOP</a>
-                </li>
+                {headerNavbarData.map((navElm) => {
+                  return (
+                    <li key={navElm.id}>
+                      <a
+                        className={navElm.active ? "selected" : ""}
+                        href={navElm.url}
+                      >
+                        {navElm.title}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </nav>
           </div>
