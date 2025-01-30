@@ -66,7 +66,7 @@ header nav a:hover {
 
 .jumbotron {
   background-image: url("../public/img/jumbotron.jpg");
-  height: 19.6875rem;
+  height: 20rem;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -75,21 +75,91 @@ header nav a:hover {
 
 main {
   background-color: #1c1c1c;
-  height: 17.5rem;
 }
 
-.main--h3 {
-  height: 8.125rem;
+/* COMICS SECTION */
+
+.comics-elements {
   display: flex;
+  justify-content: center;
   align-items: center;
+  color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.comics-elements--btn {
+  background-color: #0282f9;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.9375rem 1.875rem;
+  font-size: 1.5rem;
+  border: none;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  transition: 0.4s;
+}
+
+.comics {
+  margin: 3.125rem 0;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px 200px;
+  justify-items: center;
+  row-gap: 1.875rem;
+}
+
+.card {
+  list-style: none;
+}
+
+.comic {
+  display: flex;
+  justify-content: center;
+}
+
+.comic img {
+  width: 10.9375rem;
+  height: 10.9375rem;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card h4 {
+  margin-top: 0.625rem;
+  font-weight: 300;
+}
+
+.card a {
+  text-decoration: none;
   color: #fff;
 }
 
-/* PRODUCTS */
+.btn-load-more {
+  border: none;
+  background-color: #0282f9;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 1.25rem;
+  padding: 0.625rem 2.5rem;
+  transition: 0.4s;
+}
+
+.comics-elements--btn:hover,
+.btn-load-more:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+/* PRODUCTS SECTION */
 
 .products {
   background-color: #0282f9;
-  height: 9.375rem;
+  padding: 3.125rem 0;
   width: 100%;
 }
 
@@ -101,7 +171,6 @@ main {
 }
 
 .products nav ul {
-  height: 9.375rem;
   display: flex;
   justify-content: center;
   align-items: center;
