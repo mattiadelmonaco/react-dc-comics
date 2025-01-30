@@ -9,7 +9,24 @@ export default function Footer() {
           <div>
             {/* FOOTER TOP */}
             <div className="footer-top">
-              {footerTopLinksData.map((ftCategory) => {
+              <div>
+                {footerTopLinksData.slice(0, 2).map((ftCategory) => {
+                  return (
+                    <ul key={ftCategory.id}>
+                      <h4>{ftCategory.category}</h4>
+
+                      {ftCategory.items.map((link) => {
+                        return (
+                          <li key={link.id}>
+                            <a href={link.url}>{link.title}</a>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  );
+                })}
+              </div>
+              {footerTopLinksData.slice(2, 4).map((ftCategory) => {
                 return (
                   <div key={ftCategory.id}>
                     <ul>
@@ -26,6 +43,7 @@ export default function Footer() {
                   </div>
                 );
               })}
+
               {/* <div>
                 <ul>
                   <h4>DC COMICS</h4>
