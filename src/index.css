@@ -64,6 +64,13 @@ header nav a:hover {
   padding-bottom: 2.3125rem;
 }
 
+.jumbotron {
+  background-image: url("../public/img/jumbotron.jpg");
+  height: 19.6875rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* MAIN */
 
 main {
