@@ -65,7 +65,7 @@ header nav a:hover {
 }
 
 .jumbotron {
-  background-image: url("../public/img/jumbotron.jpg");
+  background-image: url("/img/jumbotron.jpg");
   height: 20rem;
   background-repeat: no-repeat;
   background-size: cover;
